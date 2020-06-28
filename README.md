@@ -13,6 +13,10 @@ capture which egenmore
 	if _rc!=0{
 		ssc install egenmore
 	}
+
+//Bring in example data
+sysuse e_example.dta, clear
+
 ```
 #### Basic cleaning example without `ereplace`
 ```
