@@ -11,9 +11,8 @@ use "https://github.com/Chris-Larkin/ereplace/blob/master/e_example.dta?raw=true
 //Confirm egenmore modules are installed, and install if not
 capture which egenmore
 	if _rc!=0{
-		net install cleanplots, from("https://tdmize.github.io/data/cleanplots")
+		ssc install ereplace
 	}
-set scheme cleanplots, perm
 ```
 #### Basic cleaning example without `ereplace`
 ```
